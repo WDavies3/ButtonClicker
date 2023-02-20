@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <!-- title banner -->
+        <div class="title-banner">
+            <h1 id="title">Dojonary</h1>
+            <input type="text" name="Search" id="search-bar" placeholder="Search">
+            <button class="login-btn" onclick="changeText(this,'Logout')">Login</button>
+        </div>
+        <!-- Results section -->
+        <div class="results">
+            <!-- definitions column -->
+            <div class="definitions">
+                <div class="definition-box">
+                    <div class="def-name-content">
+                        <h2 class="def-term">ninja</h2>
+                        <p class="def-part-of-speech"><em>noun</em></p>
+                        <p>Plural: <em>ninjas</em></p>
+                        <button class="like-btn" onclick="definitionLiked()">13 likes</button>
+                    </div>
+                    <div class="def-body-content">
+                        <p>A practioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                    </div>
+                </div>
+
+                <div class="definition-box">
+                    <div class="def-name-content">
+                        <h2 class="def-term">ninja</h2>
+                        <p class="def-part-of-speech"><em>noun</em></p>
+                        <p>Plural: <em>ninjas</em></p>
+                        <button class="like-btn" onclick="definitionLiked()">37 likes</button>
+                    </div>
+                    <div class="def-body-content">
+                        <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                    </div>
+                </div>
+            </div>
+            <!-- add a definition column -->
+            <div class="add-def-column">
+                <div class="add-a-def">
+                    <h3>Dojonary is defined by YOU</h3>
+                    <button class="add-def-btn" onclick="hide(this)">Add Definition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
